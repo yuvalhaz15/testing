@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body {
+          background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQFGmiCWtVf94PdpahMKibPgLmzo3mVSFOcQ&usqp=CAU);
+          background-repeat: no-repeat;
+          background-attachment: fixed; 
+          background-size: 100% 100%;
+        }
+        </style>
+ <div>
+   <nav>
+    <a href="homePage.html">Home Page</a> |
+    <a href="conactUs.html">Conact Us</a>
+    
+  </nav>
+</div>
+
+  
+    <div style="display: flex; flex-direction: column;  align-items: center;">
+     <h1 style="font-size:60px; padding: 20px ;margin: 20px;">Conact-Us </h1>
+     
+    </div>
+    <div style="display: flex; flex-direction: column;  align-items: center;">  
+    <span style="font-size:30px;">Contact Information</span><br>
+     <form action="URL" method="post">
+        <label for="FirstName">First name</label><br>
+        <input type="text" id="FirstName" name="FirstName" minlength="2" maxlength="15" autocomplete="on" onin pattern="^[a-zA-Z]*" title="First name should contain only letters"  required><br>
+        <label for="LastName">LastName </label><br>
+        <input type="text" id="LastName" name="LastName" minlength="2" maxlength="25" autocomplete="on" pattern="^[a-zA-Z]*" title="First name should contain only letters" required><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="phoneNumber">phoneNumber</label><br>
+        <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0][5][0-9]-[0-9]{7}" required>>
+        <small>Format: 05*-*******</small>
+        <br>
+        <input type="submit"><br>
+     </div>
+
+
+</body>
+</html>
