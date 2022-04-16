@@ -37,7 +37,7 @@
     </div>
     <div style="display: flex; flex-direction: column;  align-items: center">  
      <span style="font-size:30px; margin: 20px;">Contact Information</span><br>
-     <form class="contactForm" action="URL" method="post" ;">
+     <form class="contactForm" action="URL" method="post">
         <label for="FirstName" style="font-weight:bold">First name</label><br>
         <input type="text" id="FirstName" name="FirstName" minlength="2" maxlength="15" autocomplete="on" onin pattern="^[a-zA-Z]*" title="First name must contain only letters"  required><br>
         <label for="LastName" style="font-weight:bold">LastName </label><br>
@@ -46,7 +46,9 @@
         <input type="email" id="email" name="email"><br>
         <label for="phoneNumber" style="font-weight:bold">phoneNumber</label><br>
         <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0][5][0-9]-[0-9]{7}" required>
-        <small style="color: rgb(241, 8, 8);">Format: 05*-*******</small><br><br>
+        <small style="color: rgb(241, 8, 8);">Format: 05*-*******</small><br>
+        <input type="checkbox" id="termsCheckBox" name="termsCheckBox" required>
+        <label for="termsCheckBox" style="font-weight:bold; font-size: x-small;">I agree the terms of conact</label><br><br>
         <input type="reset" style="margin-top: 10px; margin-left: 12px;margin-right: 17px;margin-bottom: 5px;" >
         <input type="submit">
      </div>
