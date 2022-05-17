@@ -1,0 +1,71 @@
+
+body {
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHTnWbC6Ua-H9Zaylh-3xZNo_JiLRx4SZSNA&usqp=CAU);
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+
+
+  .contactForm {
+    width: 150px;
+    margin: 0 auto;
+}
+
+
+.homePageHeader
+{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+h1.homePageHeader{
+    font-size: 60px; 
+    padding: 20px ;
+    margin: 20px;
+    border: none;
+}
+span.homePageHeader{
+
+    font-size:30px;
+}
+.contactUsMain{
+    display: flex; 
+    flex-direction: column; 
+     align-items: center;
+}
+#contactUsHeader{
+    font-size:60px; 
+    padding: 20px 
+    ;margin: 20px;
+
+}
+.contactInformation{
+    display: flex; 
+    flex-direction: column;  
+    align-items: center
+}
+#contactInformationHeadear{
+    font-size:30px; 
+    margin: 20px;
+}
+label.contactDetails{
+    font-weight:bold;
+}
+small.contactDetails{
+    color: rgb(241, 8, 8);
+
+}
+#termsAgreeLabel{
+font-size: x-small;
+}
+#resetButton{
+     margin-top: 10px;
+     margin-left: 12px;
+     margin-right: 17px;
+     margin-bottom: 5px;
+}
+nav li {
+    display: inline;
+   }

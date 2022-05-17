@@ -4,53 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssDesign.css">
     <title>Document</title>
 </head>
 
 <body>
-    <style>
-        body {
-          background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHTnWbC6Ua-H9Zaylh-3xZNo_JiLRx4SZSNA&usqp=CAU);
-          background-repeat: no-repeat;
-          background-attachment: fixed; 
-          background-size: 100% 100%;
-        }
-     </style>
-      <style>
-        .contactForm {
-            width: 150px;
-            margin: 0 auto;
-        }
-        </style>
- <div>
-   <nav>
-    <a href="homePage.html">Home Page</a> |
-    <a href="conactUs.html">Conact Us</a>
     
-  </nav>
-</div>
+      
+  <header>
+    <nav>
+       <ul class="nav">
+        <li><a href="homePage.html">Home Page</a></li> |
+        <li><a href="conactUs.html">Conact Us</a></li>
+       </ul>
+   </nav>
+ </header>
 
   
-    <div style="display: flex; flex-direction: column;  align-items: center;">
-     <h1 style="font-size:60px; padding: 20px ;margin: 20px;">Conact-Us </h1>
+    <div class="contactUsMain">
+     <h1 class="contactUsMain" id="contactUsHeader">Conact-Us </h1>
      
     </div>
-    <div style="display: flex; flex-direction: column;  align-items: center">  
-     <span style="font-size:30px; margin: 20px;">Contact Information</span><br>
+    <div class="contactInformation">  
+     <span class="contactInformation" id="contactInformationHeadear">Contact Information</span><br>
      <form class="contactForm" action="URL" method="post">
-        <label for="FirstName" style="font-weight:bold">First name</label><br>
+        <label class="contactDetails" for="FirstName">First name</label><br>
         <input type="text" id="FirstName" name="FirstName" minlength="2" maxlength="15" autocomplete="on" onin pattern="^[a-zA-Z]*" title="First name must contain only letters"  required><br>
-        <label for="LastName" style="font-weight:bold">LastName </label><br>
+        <label class="contactDetails" for="LastName" >LastName </label><br>
         <input type="text" id="LastName" name="LastName" minlength="2" maxlength="25" autocomplete="on" pattern="^[a-zA-Z]*" title="Last name must contain only letters" required><br>
-        <label for="email" style="font-weight:bold">Email</label><br>
+        <label class="contactDetails" for="email" >Email</label><br>
         <input type="email" id="email" name="email"><br>
-        <label for="phoneNumber" style="font-weight:bold">phoneNumber</label><br>
+        <label class="contactDetails" for="phoneNumber">phoneNumber</label><br>
         <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0][5][0-9]-[0-9]{7}" required>
-        <small style="color: rgb(241, 8, 8);">Format: 05*-*******</small><br>
+        <small class="contactDetails">Format: 05*-*******</small><br>
         <input type="checkbox" id="termsCheckBox" name="termsCheckBox" required>
-        <label for="termsCheckBox" style="font-weight:bold; font-size: x-small;">I agree the terms of conact</label><br><br>
-        <input type="reset" style="margin-top: 10px; margin-left: 12px;margin-right: 17px;margin-bottom: 5px;" >
-        <input type="submit">
+        <label class="contactDetails" id="termsAgreeLabel" for="termsCheckBox">I agree the terms of conact</label><br><br>
+        <input class="formActionButton" id="resetButton" type="reset">
+        <input class="formActionButton" id="submitButton"  type="submit">
      </div>
 
 
