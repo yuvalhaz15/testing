@@ -1,15 +1,21 @@
-@media  (max-width: 600px) {
-    .backgroundImage {
-     display: none;
-    }
-   body{
-    background-image: url("../static/dog.jpeg");
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-    background-size: 100% 100%; 
+
+
+  #container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    'Header Header Header'
+    'Title Title Title'
+    'Nav Main asdie';
+    grid-gap: 0.2rem;
 }
 
+.header{
+    grid-area: Header;
   }
+
+
+
 
 .backgroundImage {
 width: 100vw;
@@ -42,6 +48,7 @@ h1.homePageHeader{
     border: none;
 }
 span.homePageHeader{
+    grid-area:Title ;
 
     font-size:30px;
 }
@@ -52,14 +59,17 @@ span.homePageHeader{
 }
 #contactUsHeader{
     font-size:60px; 
-    padding: 20px 
-    ;margin: 20px;
+    padding: 20px ;
+    margin: 20px;
+    grid-area:Title ;
 
 }
 .contactInformation{
     display: flex; 
     flex-direction: column;  
-    align-items: center
+    align-items: center;
+    grid-area: Main;
+
 }
 #contactInformationHeadear{
     font-size:30px; 
@@ -81,13 +91,15 @@ font-size: x-small;
      margin-right: 17px;
      margin-bottom: 5px;
 }
-nav li {
+ul.nav li {
     display: inline;
    }
 
 #welcomeHeader{
 animation-name: welcomeTitle;
  animation-duration: 5s;
+transition-timing-function: ease;
+grid-area: Main;
 
 }
 @keyframes welcomeTitle {
@@ -139,3 +151,74 @@ animation-name: welcomeTitle;
     text-decoration: none;
     padding: 5px 0;
 }
+
+.bar1, .bar2, .bar3{
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    display:none;
+}
+.hamburgerMenu{
+border-color: blueviolet;
+}
+@media  only screen and (min-width: 600px) {
+.navForMobileDisplay{
+
+    display:none;
+}
+
+}
+
+@media  only screen and (max-width: 600px) {
+    .backgroundImage {
+     display: none;
+    }
+    .popup{
+        display: none;
+    }
+   body{
+    background-image: url("../static/dog.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%; 
+       }
+   #container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'Header '
+    'Title'
+    'Main';
+   }
+  #contactUsHeader{
+    font-size : 2em;
+   }
+  .nav{
+  display: none;
+ }
+ label.contactDetails{
+    font-size:1em;
+}
+#contactInformationHeadear{
+    font-size:2em; 
+   
+}
+
+  .bar1, .bar2, .bar3{
+    display: flex;
+   }
+
+   #welcomeHeader{
+ font-size: 20px;
+ color: chocolate
+
+
+   }
+
+
+   h1.homePageHeader{
+    font-size:30px;
+    color: chocolate;
+   }
+  }

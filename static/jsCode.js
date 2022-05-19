@@ -28,3 +28,17 @@ document.querySelector("#close").addEventListener("click", function(){
     sessionStorage.setItem('popState','shown')
 
 });
+
+const toggleButton=document.getElementsByClassName('hamburgerMenu')[0];
+
+
+toggleButton.addEventListener('click',() => {
+  if (document.querySelector(".navForMobileDisplay").style.display === "none") {
+    document.querySelector(".navForMobileDisplay").style.display= "";
+  } else {
+    document.querySelector(".navForMobileDisplay").style.display = "none";
+  }
+
+})
+
+
